@@ -1,8 +1,9 @@
 import React from 'react';
+import './_landing.scss'
 
 const Landing = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div className="Landing">
       <h1>
         Hello World!
       </h1>
