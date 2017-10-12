@@ -6,6 +6,13 @@ $g_yellow: #ffdf3b;
 $g_white: #ffffff;
 $g_cream_color: #fafafa;
 
+
+// Themes css
+// nav, .page-footer {
+//   background: #757575;
+// }
+
+
 // mixing & @medias
 @mixin small() {
   @media only screen and (min-width: 320px) and (max-width: 374px) {

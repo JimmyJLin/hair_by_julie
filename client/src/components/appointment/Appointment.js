@@ -1,9 +1,11 @@
 import React from 'react';
+import Banner from '../utils/Banner';
 
 const Appointment = () => {
   return (
     <div>
-      <h2>Appointment</h2>
+      <Banner title="Appointment"/>
+
     </div>
   )
 }
