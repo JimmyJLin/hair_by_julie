@@ -4,7 +4,9 @@ import './_banner.scss';
 const Banner = ({ title }) => {
   return (
     <div id="banner">
-      <div id="title">{title}</div>
+      <div className="color_container">
+        <div id="title">{title}</div>
+      </div>
     </div>
   )
 }

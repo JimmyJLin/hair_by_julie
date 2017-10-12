@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div id="header" className="navbar-fixed">
         <nav>
-          <div className="nav-wrapper">
+          <div className="nav-wrapper container">
             <Link to={'/'} className="brand-logo">Logo</Link>
             <Link to={'/'} data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></Link>
             <ul className="right hide-on-med-and-down">
