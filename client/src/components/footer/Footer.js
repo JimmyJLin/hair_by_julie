@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
+import Mailto from 'react-mailto';
 
 import './_footer.scss'
 
 class Footer extends Component {
 
+  handleFloatToggle(){
+
+    if($('.fixed-action-btn').hasClass('active')) {
+      setTimeout(() => {
+        $('.fixed-action-btn').closeFAB();
+        $('.fixed-action-btn').removeClass('active');
+      }, 3000);
+    } else {
+      console.log('no active class')
+      $('.fixed-action-btn').openFAB();
+
+    }
+  }
+
   render() {
     return (
       <footer id="footer" className="page-footer">
 
-        <div className="fixed-action-btn vertical">
+        <div
+          onClick={this.handleFloatToggle}
+          className="fixed-action-btn vertical">
           <Link to={'#'} className="btn-floating btn-large red">
-            <i className="large material-icons">add</i>
+            <i className="large material-icons">menu</i>
           </Link>
           <ul>
-            <li><Link to={'/services'} className="btn-floating red"><i className="material-icons">menu</i></Link></li>
-            <li><Link to={'/about'} className="btn-floating yellow darken-1"><i className="material-icons">face</i></Link></li>
-            <li><Link to={'/reviews'} className="btn-floating green"><i className="material-icons">stars</i></Link></li>
-            <li><Link to={'/contact'} className="btn-floating red"><i className="material-icons">call</i></Link></li>
+            <li><Link to={'tel:917-386-5485'} target='_blank' className="btn-floating green"><i className="material-icons">local_phone</i></Link></li>
+            <li><Mailto email="julieslin@gmail.com" className="btn-floating red"><i className="material-icons">email</i></Mailto></li>
             <li><Link to={'/appointment'} className="btn-floating blue"><i className="material-icons">schedule</i></Link></li>
           </ul>
         </div>
