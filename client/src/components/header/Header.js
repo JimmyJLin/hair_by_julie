@@ -6,7 +6,7 @@ import './_header.scss'
 class Header extends Component {
 
   componentDidMount(){
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({closeOnClick: true});
   }
 
   render() {
@@ -31,6 +31,7 @@ class Header extends Component {
 
             </ul>
             <ul className="side-nav" id="mobile-demo">
+              <li><Link to={'/'}>Logo</Link></li>
               <li><Link to={'/services'}>Services</Link></li>
               <li><Link to={'/about'}>About</Link></li>
               <li><Link to={'/reviews'}>Reviews</Link></li>
