@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 import './_footer.scss'
 
 class Footer extends Component {
+
   render() {
     return (
       <footer id="footer" className="page-footer">
 
         <div className="fixed-action-btn vertical">
-          <Link to={'/'} className="btn-floating btn-large red">
+          <Link to={'#'} className="btn-floating btn-large red">
             <i className="large material-icons">add</i>
           </Link>
           <ul>
