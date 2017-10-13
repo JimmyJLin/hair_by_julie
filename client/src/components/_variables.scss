@@ -6,6 +6,11 @@ $g_yellow: #ffdf3b;
 $g_white: #ffffff;
 $g_cream_color: #fafafa;
 
+#sidenav-overlay{
+  // display: none;
+  z-index: 10;
+}
+
 .h_divider{
   border-bottom: solid;
 }

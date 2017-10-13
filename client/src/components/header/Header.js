@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import $ from 'jquery';
 import './_header.scss'
 
 class Header extends Component {
+
+  componentDidMount(){
+    $(".button-collapse").sideNav();
+  }
+
   render() {
     return (
       <div id="header" className="navbar-fixed">
         <nav>
           <div className="nav-wrapper container">
             <Link to={'/'} className="brand-logo">Logo</Link>
-            <Link to={'/'} data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></Link>
+            <Link
+              onClick={this.handleToggle}
+              to={'#'}
+              ref="toggle"
+              data-activates="mobile-demo"
+              className="button-collapse"
+            ><i className="material-icons">menu</i></Link>
             <ul className="right hide-on-med-and-down">
               <li><Link to={'/services'}>Services</Link></li>
               <li><Link to={'/about'}>About</Link></li>
