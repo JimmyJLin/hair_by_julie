@@ -1,7 +1,42 @@
 
 #landing{
-  text-align: center;
+  .h_divider{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 30%;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+  }
+
   h1{
     color: pink;
+  }
+  #about, #address{
+    padding: 50px 0;
+  }
+
+  #about {
+    #title{
+      text-align: center;
+    }
+    p{
+      padding: 0 25px;
+    }
+  }
+
+  #image_content{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #address{
+    text-align: center;
+
+    h4{
+      border-top-style: solid;
+      padding-top: 25px;
+    }
   }
 }
