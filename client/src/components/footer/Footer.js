@@ -10,7 +10,7 @@ class Footer extends Component {
 
         <div className="fixed-action-btn vertical">
           <Link to={'/'} className="btn-floating btn-large red">
-            <i className="large material-icons">mode_edit</i>
+            <i className="large material-icons">add</i>
           </Link>
           <ul>
             <li><Link to={'/services'} className="btn-floating red"><i className="material-icons">menu</i></Link></li>
